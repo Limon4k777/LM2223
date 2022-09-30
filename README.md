@@ -4,3 +4,4 @@ Bienvenidos al repositorio de **Javi**. Aquí estaran todos los ejercicios del m
 - Ejercicios HTML 
 - Ejercicios CSS 
 - Ejercicios JS 
+- Ejercicios JQuery
