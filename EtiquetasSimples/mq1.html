@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mq1</title>
+    <style>
+        .movil{ 
+            background-color:red;
+            height:500px;
+        }
+        .tablet{ 
+            background-color:purple;
+            height:500px;
+        }
+        .portatil{ 
+            background-color:yellow;
+            height:500px;
+        }
+        .escritorio{ 
+            background-color:yellowgreen;
+            height:500px;
+        }
+        .imprimir{ 
+            background-color:cyan;
+            height:500px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .tablet,.portatil,.escritorio,.imprimir{
+                display:none;
+            }
+        }    
+        @media screen and (max-width: 769px) and (min-width: 481px) {
+            .movil,.portatil,.escritorio,.imprimir{
+                display:none;
+            }
+        }    
+        @media screen and (max-width: 1279px) and (min-width: 770px) {
+            .tablet,.movil,.escritorio,.imprimir{
+                display:none;
+            }
+        }    
+        @media screen and (min-width: 1280) {
+            .tablet,.portatil,.movil,.imprimir{
+                display:none;
+            }
+        }    
+        @media print {
+            .tablet,.portatil,.escritorio,.movil{
+                display:none;
+            }
+        }    
+    </style>
+</head>
+<body>
+    <div  class="movil">Móvil</div>
+    <div  class="tablet">tablet</div>
+    <div  class="portatil">portatil</div>
+    <div  class="escritorio">escritorio</div>
+    <div  class="imprimir">Móvil</div>
+</body>
+</html>

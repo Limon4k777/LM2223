@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        body {
+        background-color:lemonchiffon;
+        }
+        
+        #cajas {
+          float: none;
+          width: auto;
+        }
+        
+        #sinmargen {
+          margin: 0;
+          padding: 0;
+        }
+        
+        .overflow {overflow: auto;}
+        
+        #centro {margin-left: 4px;}
+
+        .menuitem {
+          padding: 4px;
+          text-align:center;
+          height: 60px;
+          list-style-type: none;
+          margin: 6px;
+          line-height:60px;
+          background: greenyellow;
+          border: 1px solid blueviolet;
+          vertical-align:center;
+        }
+        
+        @media screen and (min-width: 480px) {
+          #centro {margin-right: 180px;}
+          #cajas {width: 150px; float: right;}
+        }
+        @media print {
+            body {
+                background-color: lemonchiffon;
+            }
+            #cajas {
+                display:none;
+            }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="overflow">
+          <div id="cajas">
+            <ul id="sinmargen">
+              <li class="menuitem">Juan 1</li>
+              <li class="menuitem">Juan 2</li>
+              <li class="menuitem">Juan 3</li>
+              <li class="menuitem">Juan 4</li>
+              <li class="menuitem">Juan 5</li>
+              <li class="menuitem">Juan 6</li>
+              <li class="menuitem">Juan 7</li>
+            </ul>
+          </div>
+          
+          <div id="centro">
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus blandit aliquet. Phasellus gravida vehicula neque finibus porta. Vestibulum sagittis eros non tincidunt accumsan. Cras nibh magna, blandit sed tempor a, sollicitudin quis dui. Pellentesque tincidunt nibh nec nisl porta, vitae blandit lectus convallis. Fusce vel mollis dui. Quisque neque massa, hendrerit maximus pretium nec, tempus quis est. Nulla sit amet magna nisi. Integer faucibus dapibus dapibus. Vivamus scelerisque ligula vel felis ornare, non iaculis risus convallis. Curabitur cursus, nulla quis euismod semper, lacus dui condimentum mi, eget pharetra diam turpis malesuada lectus. Nulla justo dolor, aliquet vitae leo at, vulputate dictum eros.
+
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eleifend pellentesque arcu in pretium. Aenean fermentum porttitor nibh, sit amet commodo elit vulputate id. Fusce congue sollicitudin libero ac pharetra. Nullam bibendum ut nisi quis venenatis. Aliquam ante purus, hendrerit in condimentum sit amet, bibendum et ante. Donec ultrices cursus laoreet. Integer dapibus a augue ac eleifend. Donec eu neque lobortis, semper mi varius, rutrum ante. Duis eu justo lorem. Aliquam auctor mi elit, sit amet dapibus purus auctor id. Sed ac luctus sem. Donec eleifend metus venenatis sodales tempor. Aliquam ut mi non felis ultricies auctor vitae id purus.</p>
+            <p>Maecenas ut luctus turpis. Etiam eget tellus cursus, fringilla purus at, sodales urna. Nulla tempus vestibulum ipsum, sed egestas arcu aliquam a. Curabitur libero ante, pharetra eget mi nec, hendrerit rhoncus ligula. Aliquam gravida interdum odio, nec rutrum odio mollis et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras nec mauris arcu.
+
+                Curabitur ac aliquam odio. Phasellus pretium lacinia lorem et vulputate. Aliquam ultrices aliquam quam nec fringilla. Quisque pretium, est et porta sollicitudin, massa ligula mattis lacus, id condimentum tortor tortor dictum tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras vulputate tortor odio, ut egestas leo convallis vel. Ut eros mauris, sodales et hendrerit id, volutpat et magna. Mauris euismod congue nulla, vitae pharetra lacus ultrices et. Vestibulum commodo dignissim egestas. Sed in massa risus.
+                
+                Sed eget dolor fermentum, fringilla enim eu, pellentesque lacus. In ut elementum elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris interdum dui ut augue rhoncus semper. Sed laoreet justo est, a fermentum nisi fringilla eu. Nulla nec posuere diam. Vivamus dictum mauris in elit congue convallis. Mauris ac lectus eu magna rutrum iaculis consectetur et odio. Nulla fringilla pulvinar ligula nec pretium. Cras fermentum est vitae quam laoreet, ac mollis urna vehicula.</p>
+          </div>
+        </div>
+        
+</body>
+</html>
