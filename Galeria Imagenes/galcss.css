@@ -29,14 +29,14 @@
   }
   
   
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     .columna {
       flex: 50%;
       max-width: 50%;
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     .columna {
       flex: 100%;
       max-width: 100%;
