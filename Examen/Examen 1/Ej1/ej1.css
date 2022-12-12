@@ -1,0 +1,88 @@
+    @font-face {
+        font-family:Open_Sans;
+        src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+    }
+    body {
+        margin: 0;
+        background-size:100%, 100%;
+        background-repeat: no-repeat;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        background-color: #970043;
+        background-position: center;
+        background-size: 35%;
+    }
+    .center {
+        background-color: #f2f2f2;
+        flex:50%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        padding:1%;
+        font-family: Open_Sans;
+    }
+    .main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        font-size:12px;
+        height:100%;
+        align-content:center ;
+        
+    }
+    center:hover {
+        color:black;
+        background-color: #970043;
+    }
+    .center::first-letter {
+        font-size: 20px;
+        font-weight:bold;
+    }
+    .side {
+        background-color:#970043;
+        flex:25%;
+        padding:0.5%;
+        background-repeat: no-repeat;
+        display:flex;
+    }
+    header {
+        width:100%;
+        background-color:#ffd100;
+        margin:0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius:20px;
+        height:50px;
+        align-content: center;
+    }
+    .img {
+        flex:50%;
+        width: 50% ;
+        border-radius: 10px;
+        align-self:center;
+        display:flex;
+    }
+    .tit {
+        font-size: larger;
+        line-height: 50px;
+        align-content: center;
+    }
+    .u {
+        cursor:help;
+        text-decoration: none;
+        color:#ffd100;
+    }
+    .o {
+        cursor:help;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    footer {
+        background-color: #ffd100;
+        display: flex;
+        height:50px;
+        align-self: center;
+        width:100%;
+        border-end-end-radius: 20px;
+        border-end-start-radius: 20px ;
+    }

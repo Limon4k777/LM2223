@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-image: url(IMG/bg.jpg);
+    background-size:100%, 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    text-align: center;
+    background: #b28306;
+    color: #4c3803;
+    border-radius: 20px;
+    margin-right:2%;
+    margin-left:2%;
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    padding: 0px;
+    font-size:200%;
+    font-weight: bold;
+    line-height: 100px;
+    height:100px;
+  }
+  
+  .tit {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  html {
+    font-family:trebuchet,geneva,sans-serif;
+  }
+
+  /* Style the top navigation bar */ 
+  .navbar {
+    display: flex;
+    background-color: #ebcd7c;
+    border-radius: 20px;
+    margin-right:2%;
+    margin-left:2%;
+    padding:0.5%;
+    justify-content: space-around;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: #b28306;
+    background-color:#4c3803;
+    padding:0.5% ;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    line-height:50%;
+    border: 1px solid #4c3803; 
+    width:18%;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    border-color: white;
+    color: white;
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right:2%;
+    margin-left:2%;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 25%;
+    background-color :#b28306;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 75%;
+    padding: 20px;
+
+  }
+  
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    border-top:10px solid black;
+    background: transparent;
+    margin-right:2%;
+    margin-left:2%;
+  }
+  
+  .link {
+    color:gray;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }

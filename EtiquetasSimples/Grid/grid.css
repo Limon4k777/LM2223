@@ -1,0 +1,68 @@
+.grid-container {
+    display: grid;
+    column-gap: 4px black;
+    row-gap:4px black;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    width: 80%;
+    align-content: center;
+    padding: 1%
+  }
+  .c1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: 1/1/1/3;
+    width: auto;
+  }
+  .c2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    grid-area: 2/1/2/3;
+  }
+  .c3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    grid-area: 3/1/3/2;
+  }
+  .c4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    grid-area: 3/2/3/3;
+ }
+  .c5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    grid-area: 4/1/4/3;
+  }
+  .c6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    grid-area: 5/1/5/3;
+  }
+  body {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+  }
