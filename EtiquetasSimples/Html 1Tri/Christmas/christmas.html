@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christmas</title>
+    <style>
+        img {
+            display:flex;
+            width:100%;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        body {
+            display:flex;
+            flex-wrap: wrap;
+            background-color: red;
+            align-content: center;
+        }
+        div {
+            display:flex;
+        }
+        .titu {
+            padding: 10px;
+            background-color: green;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            width: 100%;
+            height:100px;
+            line-height: 50px;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: bold;
+            color: white;
+        }
+        .main {
+            padding: 10px;
+            width: 100%;
+            background-color: azure;
+            text-shadow: 3px 3px 3px cyan;
+            font-size: larger;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .borde {
+            padding:0px;
+            border: 10px double white;
+            flex-wrap: wrap;
+            border-radius: 30px;
+        }
+        .rainbow {
+            background-color: #343A40;
+            border-radius: 4px;  
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            display: flex;
+        }
+        .rainbow:hover{
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+            animation:slidebg 2s linear infinite;
+        }
+        @keyframes slidebg {
+        to {background-position:20vw;}
+        }
+        a {
+            text-decoration: none;
+            color:white ;
+        }
+    </style>
+</head>
+<body>
+    <div class="borde">
+    <div class="titu"><p>🎅Feliz Navidad José Luis🎄</p></div>
+    <div class="main">
+        <p>Buenas José Luis, llevamos solo 3 meses de clase y ha sido toda una gran experiencia de aprendizaje, llevo 4 años usando html para robar cuentas de redes sociales y juegos pero nunca me habia dado por hacer cosas asi bonitas, gracias a ti ahora voy a poder robar más cuentas y con más eficiencia así que al menos eso es de agradecer. Yo como soy muy pagano te deseo feliz navidad, janucá, ramadan o lo que proceda... Que tus deidades correspendientes te traigan muchos regalos.</p>
+        <div class="rainbow"><a href="mailto:fcojavierfloresrios@gmail.com">Respondeme</a></div>
+    </div>
+    <img src="https://i.imgur.com/6hDRr.jpeg">
+    </div>
+</body>
+</html>
