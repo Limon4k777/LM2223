@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p>He pensado una de las siguientes palabras</p>
+    <p id="texto"></p>
+    <script>
+        var palabra=["casa","perro","juan","mesa","tenis"]
+        document.getElementById("texto").innerHTML = palabra;
+        var secreta = palabra[3];
+        function comprueba() {
+         if (document.getElementById("palabra").value == secreta) 
+         {
+            alert("Bien")
+         }
+         else (document.getElementById("palabra").value != secreta) 
+         {
+            alert("Mal")
+         }
+        }
+    </script>
+    <p>¿Cuál crees que es?</p>
+    <input type="text" name="palabra" id="palabra">
+    <button onclick="comprueba()">La palabra no es juan</button>
+</body>
+</html>

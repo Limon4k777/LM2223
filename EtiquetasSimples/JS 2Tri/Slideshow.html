@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+</head>
+<body>
+
+    <table>
+            <tr>
+                <th id="1"><img src="IMG/juan1.jfif" height="200px"></img></th>
+                <th id="2"><img src="IMG/juan2.jfif" height="200px"></img></th>
+                <th id="3"><img src="IMG/juan3.jfif" height="200px"></img></th>
+                <th id="4"><img src="IMG/juan4.jfif" height="200px"></img></th>
+                <th id="5"><img src="IMG/juan5.jfif" height="200px"></img></th>
+            </tr>
+    </table>
+
+    <br><br><br>
+    <button onclick="Ant()">Anterior</button>
+    <button onclick="Sig()">Siguiente</button>
+    <br><br><br>
+    <p id="p"></p>
+
+    <script>
+        var a = 0;
+        function Sig() {
+            a = a+1;
+            if (a>5) {a=1};
+            document.getElementById("p").innerHTML=a;
+            if (a==1) {
+                document.getElementById("2").style.display="none";
+                document.getElementById("3").style.display="none";
+                document.getElementById("4").style.display="none";
+                document.getElementById("5").style.display="none";
+                document.getElementById("1").style.display="block";
+            }
+            else {
+                if (a==2) {
+                    document.getElementById("1").style.display="none";
+                    document.getElementById("3").style.display="none";
+                    document.getElementById("4").style.display="none";
+                    document.getElementById("5").style.display="none";
+                    document.getElementById("2").style.display="block";
+            }   
+                else {
+                    if (a==3) {
+                        document.getElementById("2").style.display="none";
+                        document.getElementById("1").style.display="none";
+                        document.getElementById("4").style.display="none";
+                        document.getElementById("5").style.display="none";
+                        document.getElementById("3").style.display="block";
+                    }   
+                    else 
+                        if (a==4) {
+                            document.getElementById("2").style.display="none";
+                            document.getElementById("3").style.display="none";
+                            document.getElementById("1").style.display="none";
+                            document.getElementById("5").style.display="none";
+                            document.getElementById("4").style.display="block";
+            }
+                        else {
+                            if (a==5) {
+                                document.getElementById("2").style.display="none";
+                                document.getElementById("3").style.display="none";
+                                document.getElementById("4").style.display="none";
+                                document.getElementById("1").style.display="none";
+                                document.getElementById("5").style.display="block";
+                            };
+                    };
+                };
+            };
+        };
+        function Ant() {
+            a = a-1;
+            if (a<1) {a=5};
+            document.getElementById("p").innerHTML=a;
+            if (a==1) {
+                document.getElementById("2").style.display="none";
+                document.getElementById("3").style.display="none";
+                document.getElementById("4").style.display="none";
+                document.getElementById("5").style.display="none";
+                document.getElementById("1").style.display="block";
+            }
+            else {
+                if (a==2) {
+                    document.getElementById("1").style.display="none";
+                    document.getElementById("3").style.display="none";
+                    document.getElementById("4").style.display="none";
+                    document.getElementById("5").style.display="none";
+                    document.getElementById("2").style.display="block";
+            }   
+                else {
+                    if (a==3) {
+                        document.getElementById("2").style.display="none";
+                        document.getElementById("1").style.display="none";
+                        document.getElementById("4").style.display="none";
+                        document.getElementById("5").style.display="none";
+                        document.getElementById("3").style.display="block";
+                    }   
+                    else 
+                        if (a==4) {
+                            document.getElementById("2").style.display="none";
+                            document.getElementById("3").style.display="none";
+                            document.getElementById("1").style.display="none";
+                            document.getElementById("5").style.display="none";
+                            document.getElementById("4").style.display="block";
+            }
+                        else {
+                            if (a==5) {
+                                document.getElementById("2").style.display="none";
+                                document.getElementById("3").style.display="none";
+                                document.getElementById("4").style.display="none";
+                                document.getElementById("1").style.display="none";
+                                document.getElementById("5").style.display="block";
+                            };
+                    };
+                };
+            };
+        };
+
+
+    </script>
+</body>
+</html>

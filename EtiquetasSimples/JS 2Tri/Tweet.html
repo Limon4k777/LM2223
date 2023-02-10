@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet </title>
+    <style>
+        .rectangulo{
+            width: 50%;
+            height: 100px ;
+            border: 1px solid gray;
+            border-radius: 5px ;
+        }
+
+    </style>
+</head>
+<body> 
+    <label for="tweet"></label>
+    <input type="text" name="tweet" id="tweet" placeholder="Escribe post">
+    <button onclick="imprenMensajes()">Enviar</button>
+    <p>Pulsa el botón para sustraer elemento.</p>
+    <div id="caja">
+        <a href=""></a>
+    </div>
+    <button onclick="ordenar()">Ordenar</button> 
+    <p id="juan"></p>
+    <script>
+        var mensajes;
+        var mensaje;
+       let mensajes=["juan","hola","pepsicola"]
+        function imprenMensajes() {
+        for (var i=mensajes.length;i=0;i=i-1) {
+        var mensajes = document.getElementById("tweet").innerHTML;
+        mensaje.push(mensajes[i]);
+        document.write("<div class='rectangulo'>");
+        document.write("<img src='IMG/Twitter.png'>");
+        document.write(mensaje[i]);
+        document.write("<button onclick='alert(\"has pulsado la papelera\")'>");
+        document.write("<img src='IMG/Bin.png'>");
+        document.write("</div>");
+        document.write("<br>");
+    }
+    }
+    </script>
+</body>
+</html>
