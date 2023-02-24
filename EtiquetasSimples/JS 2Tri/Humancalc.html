@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human</title>
+</head>
+<body>
+    <p id="p"></p>
+    <button onclick=Emp()>Empezar</button>
+    <script>
+        var a;
+        var b;
+        var c;
+        var d;
+        var preg;
+        var good;
+
+        function Emp() {
+            (Math.floor(Math.random() * 10))= a;
+            (Math.floor(Math.random() * 10))= b;
+            (Math.floor(Math.random() * 4))= c;
+            if (c=1) {d="+"} else {if (c=2) {d="-"} else {if (c=3) {d="*"} else {d="/"}}};
+            document.getElementById("p").innerHTML = (a + d + c)
+        }
+        
+    </script>
+</body>
+</html>

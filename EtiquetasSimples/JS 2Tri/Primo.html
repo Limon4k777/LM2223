@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="1">
+    </form>
+    
+    
+    <button onclick=primo()>Primo?</button>
+    <p id="p"></p>
+    
+    <script>
+        function primo() {
+            let entrada = document.getElementById("1").value;
+
+             let i = 2;
+             let esprimo = true;
+            while (i<entrada && esprimo) {
+                if (entrada % i == 0) {
+                    document.getElementById("p").innetHTML;
+                    espirmo = false;
+                }
+                i++;
+            }
+
+            if (esprimo)
+            document.getElementById("p").innerHTML="Es primo";
+            else
+            document.getElementById("p").innerHTML="No es primo";
+        }    
+    </script>   
+</body>
+</html>
