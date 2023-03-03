@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Session Storage</h1>
+
+<form>
+<label for="co">Color</label>
+<input type="text" id="co" name="co"></input>
+<button onclick="guardar()">Guardar</button>
+<button onclick="recuperar()">Recuperar</button>
+</form>
+<p id="demo"></p>
+
+<script>
+function recuperar(){
+    let valor = document.getElementById("co").value;
+    let cadena = sessionStorage.getItem(valor);
+    document.getElementById("demo").innerHTML = cadena;
+}
+function guardar(){
+    let valor = document.getElementById("co").value;
+    let cadena = sessionStorage.setItem(valor);
+    document.getElementById("demo").innerHTML = cadena;
+}
+/*
+a = sessionStorage.getItem("co");
+sessionStorage.setItem("color", a);
+
+
+setTimeout(carga, 1000);
+
+function carga() {
+document.getElementById("demo").innerHTML = sessionStorage.getItem("co");
+setTimeout(carga, 1000)}; 
+*/
+</script>
+</body>
+</html>
