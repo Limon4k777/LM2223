@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>¡Adivina cuantos dedos tengo!</h1>
+    <label for="elige">Eliga su número</label>
+    <input id="num" name="elige"></input>   
+    <button onclick="check()">Prueba</button>
+    <p id="demo"></p>
+    <p id="emo"></p>
+    <p id="mo"></p>
+
+    <script>
+
+        var a;
+        if (a == null) {
+        a = 0
+        };
+
+        var b = localStorage.getItem("puntos");
+
+        document.getElementById("demo").innerHTML = "Putnos: " + a;
+
+        document.getElementById("emo").innerHTML = "Puntuacion max: " + localStorage.getItem("puntos");
+
+
+
+
+        function check() {
+
+            var numram = Math.floor(Math.random() * 5) + 1;
+
+            var num = document.getElementById("num").value;
+
+            if (num == numram) {
+            document.getElementById("mo").innerHTML = "¡CORRECTO! era "+ numram;
+            a++;
+            if (a > b) {
+            b = a;
+            localStorage.setItem("puntos", b);
+            document.getElementById("emo").innerHTML =  "Puntuacion max: " + localStorage.getItem("puntos");
+            }}
+            else {
+                document.getElementById("mo").innerHTML = "Error mi número es " + numram;
+            };
+
+            document.getElementById("demo").innerHTML =  "Putnos: " + a;
+            var numram = Math.floor(Math.random() * 5) + 1;
+        }
+
+    </script>
+</body>
+</html>

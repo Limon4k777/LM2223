@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"> </script>
+    <script>
+
+        $(document).ready(function() {
+
+
+            $("#button_a").click(function(){
+                $("p").fadeOut();
+            });
+
+            $("#button_b").click(function(){
+                $("p").fadeIn();
+            });
+
+            $("#button_c").click(function(){
+                $("p").fadeToggle();
+            });
+
+        });
+    
+    </script>
+    <title>Document</title>
+    <button id="button_a">Ocultar</button>
+    <button id="button_b">Mostrar</button>
+    <button id="button_c">Cambiar</button>
+</head>
+<body>
+    <p>
+1111111111111111111111111111111
+    </p>
+    <p class="par">
+2222222222222222222222222222222
+    </p>
+    <p>
+3333333333333333333333333333333
+    </p>
+    <p class="par">
+4444444444444444444444444444444
+    </p>
+
+</body>
+</html>

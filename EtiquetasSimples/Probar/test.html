@@ -1,0 +1,27 @@
+<html>
+<title>Array</title>
+<body onload="myFunction()">
+
+    <p id="demo">This is an array</p>
+   
+  <script>
+    var globe;
+    var i = 0;
+
+    function myFunction() {
+      var sl = ["a", "b", "c", "d", "d", "e", "f"];
+      for (i = 0; i < 7; i++) {
+        globe = sl[i];
+        setTimeout(pk, 50);
+      }
+    }
+
+    function pk() {
+      document.write(globe);
+      i++;
+      myFunction();
+    }
+  </script>
+</body>
+
+</html>

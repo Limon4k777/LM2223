@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <h1>¡Adivina el número!</h1>
+    
+
+
+
+        <label id="lab" for="num" style="display: none;">Adivina</label>
+        <input id="num" name="num" style="display: none;">
+        <button onclick="check()" style="display: none;" id="but1">check</button>
+        <button onclick="Iniciar()" style="display: block;" id="but2">Iniciar</button>
+
+        <p id="pri"></p>
+        <p id="seg"></p>
+        <p id="tiempo"></p>
+        <p id="tiemporecord"></p>
+    
+
+    <script>
+        var aciertos;
+        var num;
+        
+
+    function check() {
+
+        let num = document.getElementById("num").value;
+        let array = num.split("", 3);
+        aciertos = 0;
+        if (array[0] == numram1) {aciertos++;};
+        if (array[1] == numram2) {aciertos++;};
+        if (array[2] == numram3) {aciertos++;};
+
+        if (aciertos == 0) {document.getElementById("pri").innerHTML = "Has acertado en 0 cifras" }
+        if (aciertos == 1) {document.getElementById("pri").innerHTML = "Has acertado en 1 cifra" };
+        if (aciertos == 2) {document.getElementById("pri").innerHTML = "Has acertado en 2 cifras"};
+        if (aciertos == 3) {document.getElementById("pri").innerHTML = "Has acertado en 3 cifras"};
+    
+        if (aciertos == 3) {
+        fin = new Date().getTime();
+        diferencia = (fin-inicio)/1000;
+        document.getElementById("but1").style.display="none";
+        document.getElementById("lab").style.display="none";
+        document.getElementById("num").style.display="none";
+        document.getElementById("but2").style.display="block";
+            
+        if (diferencia < localStorage.getItem("record") || localStorage.getItem("record") == null ){
+            min=diferencia;
+            document.getElementById("tiempo").innerHTML = "Has tardado " + diferencia + "s";
+            localStorage.setItem("record", min);
+            document.getElementById("tiemporecord").innerHTML = "Tu record es " +  localStorage.getItem("record") + "s";
+        }
+        else {
+            document.getElementById("tiempo").innerHTML = "Has tardado " + diferencia + "s";
+            document.getElementById("tiemporecord").innerHTML = "Tu record es " + localStorage.getItem("record") + "s";
+        }
+    }
+}
+
+function Iniciar() {
+    
+        document.getElementById("but1").style.display="block"
+        document.getElementById("lab").style.display="block"
+        document.getElementById("num").style.display="block"
+        document.getElementById("but2").style.display="none"
+
+        aciertos = 0;
+        document.getElementById("pri").innerHTML = "";
+        document.getElementById("seg").innerHTML = "";
+        document.getElementById("tiempo").innerHTML = "";
+        document.getElementById("tiemporecord").innerHTML = "";
+
+         numram1 = Math.floor(Math.random() * 10) + 1;
+        if (numram1 == 10) {numram1 = 0}
+         numram2 = Math.floor(Math.random() * 10) + 1;
+        if (numram2 == 10) {numram2 = 0}
+         numram3 = Math.floor(Math.random() * 10) + 1;
+        if (numram3 == 10) {numram3 = 0}
+        var min = Infinity;
+        window.inicio = new Date().getTime();
+ 
+}
+
+    </script>
+
+</body>
+</html>
